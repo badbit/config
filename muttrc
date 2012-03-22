@@ -1,0 +1,83 @@
+# Mi configuración básica de mutt.
+# Modificada lun mar 19 11:59:41 PDT 2012
+# Hay dos líneas en este archivo que deben ser censuradas si requiere respaldarse (12 y 25), ya que contienen el password de mi correo electrónico.
+
+# Set default editor
+set editor="vim"
+
+# Asks to include message when replying
+set include=ask-yes
+
+# Asks to postpone a message when not sent
+set postpone=ask-yes
+
+# Ask before printing
+set print=ask-yes
+
+# sort messages by thread
+set sort=threads
+
+# Set quotemark to 1 byte
+set indent_str="> "
+
+# Only show the body when I edit a message
+unset edit_headers
+
+# set from to ensure mutt doesn't put user@localhost.localhost 
+set from="el.badbit@gmail.com"
+set use_from=yes
+set envelope_from="yes"
+
+# set some coloring for easier mail reading
+# Color messages
+color index brightyellow default ~N
+color index brightred default ~D
+
+# Collapse old messages
+set collapse_unread=no
+folder-hook . 'push <collapse-all>'
+
+# Mis datos básicos.
+set from = "el.badbit@gmail.com"
+set realname = "Miguel Lozano"
+
+# Información de IMAP.
+set imap_user = "el.badbit@gmail.com"
+# Borrar o censurar la línea siguiente al respaldar este archivo.
+set imap_pass = "inserpasswordhere"
+
+# Configuración de acceso a Gmail a través de IMAP.
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed = "+[Gmail]/Drafts"
+set trash = "imaps://imap.gmail.com/[Gmail]/Trash"
+
+# Directorios predeterminados para mutt.
+set header_cache =~/.mutt/cache/headers
+set message_cachedir =~/.mutt/cache/bodies
+set certificate_file =~/.mutt/certificates
+
+# Configuración de SMTP para enviar corre.
+set smtp_url = "smtp://el.badbit@smtp.gmail.com:587/"
+# Borrar o censurar la línea siguiente al respaldar este archivo.
+set smtp_pass = "inserpasswordhere"
+ 
+# Añade algunas teclas rápidas.
+bind editor <space> noop
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
+macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
+
+# Quita algunas cosas molestad de mutt.
+set move = no  #Stop asking to "move read messages to mbox"!
+set imap_keepalive = 900
+
+# Integrar abook con mutt. La tecla A añadirá al remitente a mi libreta de direcciones de abook.
+set query_command= "abook --mutt-query '%s'"
+macro index A     "|abook --add-email\n" 'add sender to abook'
+macro pager A     "|abook --add-email\n" 'add sender to abook'
+
+# Ver URL dentro de mutt.
+macro index \cb   "|urlview\n"
+macro pager \cb   "|urlview\n"
