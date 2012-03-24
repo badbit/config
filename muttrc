@@ -81,3 +81,6 @@ macro pager A     "|abook --add-email\n" 'add sender to abook'
 # Ver URL dentro de mutt.
 macro index \cb   "|urlview\n"
 macro pager \cb   "|urlview\n"
+
+# Comando para ver apropiadamente los correos HTML.
+auto_view text/html
