@@ -1,2 +1,18 @@
-Estos son diversos archivos de configuración para mis sistemas Linux/Ubuntu.
+Estos son diversos archivos de configuración para mis sistemas Debian/Ubuntu.
 Cada carpeta corresponde a un programa diferente.
+
+
+bash/           Configuración para bash. Va en $HOME.
+debian/         Archivos de configuración de Debian. Van en varias partes del sistema.
+finch/          Configuración específica para finch. Va en $HOME.
+git/            Configuración para git.
+mutt/           Configuración para mutt. Va en $HOME.
+pentadactyl/    Configuración para Pentadactyl, la extensión de Firefox. El archivo
+                pentadactylrc va en $HOME y el resto de las carpetas va dentro
+                del directorio .pentadactyl en $HOME.
+screen/         Configuración para byobu/screen. Los dos archivos van en $HOME.
+
+Hay dos archivos en la primera carpeta:
+
+README          Este archivo.
+install.sh      Un sencillo script de instalación.
