@@ -2,8 +2,15 @@
 
 loadplugins '\.(js|penta)$'
 group user
+
+" Hacer que Duck Duck Go sea el buscador predeterminado.
 set defsearch=duckduckgo
+
+" Ocultar la barra de pestañas.
 set showtabline=never
+
+" Always open help in a new tab
+set newtab+=help
 
 " vim: set ft=pentadactyl:
 
@@ -30,5 +37,15 @@ EOF
 set passkeys+='https://mail\.':<Left><Right><Up><Down><Del>
 
 " Quickmarks
-"silent qmark 0 hahler.de
-"silent qmark c http://www.google.com/calendar
+silent qmark a http://www.amazon.com/
+silent qmark b http://www.blogger.com/
+silent qmark c http://correo.cobachbc.edu.mx/
+silent qmark f http://www.facebook.com/
+silent qmark g http://www.github.com/
+silent qmark i http://images.google.com/
+silent qmark k http://www.flickr.com/
+silent qmark l http://lmgtfy.com/
+silent qmark r http://www.redhotpawn.com/
+silent qmark t http://www.thepiratebay.org/
+silent qmark y http://www.youtube.com/
+silent qmark w http://www.wushdishmeen.net/
