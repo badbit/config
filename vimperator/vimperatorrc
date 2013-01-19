@@ -1,13 +1,15 @@
 "1.0rc1
 
-loadplugins '\.(js|penta)$'
-group user
+"loadplugins '\.(js|penta)$'
+" La siguiente línea no funciona con vimperator.
+"group user
 
 " Hacer que Duck Duck Go sea el buscador predeterminado.
 set defsearch=duckduckgo
 
+" Otra opción que parece no funcionar en vimperator.
 " Ocultar la barra de pestañas.
-set showtabline=never
+" set showtabline=never
 
 " Always open help in a new tab
 set newtab+=help
@@ -33,8 +35,9 @@ document.getElementById("status-bar")
 })();
 EOF
 
+" La siguiente opción funcionaba en pentadactyl pero parece que ya no funciona en vimperator.
 " passthrough certain keys, see "h key-sequence" for a list
-set passkeys+='https://mail\.':<Left><Right><Up><Down><Del>
+" set passkeys+='https://mail\.':<Left><Right><Up><Down><Del>
 
 " Quickmarks
 silent qmark a http://www.amazon.com/
