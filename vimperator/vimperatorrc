@@ -48,6 +48,7 @@ silent qmark g http://www.github.com/
 silent qmark i http://images.google.com/
 silent qmark k http://www.flickr.com/
 silent qmark l http://lmgtfy.com/
+silent qmark m http://www.cepatria.edu.mx/moodle/
 silent qmark r http://www.redhotpawn.com/
 silent qmark t http://www.thepiratebay.org/
 silent qmark y http://www.youtube.com/
