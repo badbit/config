@@ -17,23 +17,23 @@ set newtab+=help
 " vim: set ft=pentadactyl:
 
 " rss-icon in statusbar, via http://code.google.com/p/vimperator-labs/issues/detail?id=237
-javascript <<EOF
-(function(){
-if ( ! document.getElementById("BMB_subscribeToPageMenuitem").disabled ) {
-var feedButton = document.getElementById("BMB_subscribeToPageMenupopup");
-// var feedButton = document.createElement("")
-// <image xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="lazarus-statusbarpanel-image" src="chrome://lazarus/skin/lazarus.png" onclick="Lazarus.onStatusbarImageClick(event)" tooltip="lazarus-statusbaricon-tooltip-enabled"/>
+"javascript <<EOF
+"(function(){
+"if ( ! document.getElementById("BMB_subscribeToPageMenuitem").disabled ) {
+"var feedButton = document.getElementById("BMB_subscribeToPageMenupopup");
+"// var feedButton = document.createElement("")
+"// <image xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="lazarus-statusbarpanel-image" src="chrome://lazarus/skin/lazarus.png" onclick="Lazarus.onStatusbarImageClick(event)" tooltip="lazarus-statusbaricon-tooltip-enabled"/>
 
-var feedPanel = document.createElement("statusbarpanel");
-feedPanel.setAttribute("id", "feed-panel-clone");
-feedPanel.appendChild(feedButton);
-feedPanel.firstChild.setAttribute("style", "padding: 0; max-height: 16px;");
-document.getElementById("status-bar")
-.appendChild(feedPanel);
-// .insertBefore(feedPanel, document.getElementById("security-button"));
-}
-})();
-EOF
+"var feedPanel = document.createElement("statusbarpanel");
+"feedPanel.setAttribute("id", "feed-panel-clone");
+"feedPanel.appendChild(feedButton);
+"feedPanel.firstChild.setAttribute("style", "padding: 0; max-height: 16px;");
+"document.getElementById("status-bar")
+".appendChild(feedPanel);
+"// .insertBefore(feedPanel, document.getElementById("security-button"));
+"}
+"})();
+"EOF
 
 " La siguiente opción funcionaba en pentadactyl pero parece que ya no funciona en vimperator.
 " passthrough certain keys, see "h key-sequence" for a list
@@ -41,7 +41,7 @@ EOF
 
 " Quickmarks
 silent qmark a http://www.amazon.com/
-silent qmark b http://www.blogger.com/
+silent qmark b http://www.bancomer.com/
 silent qmark c http://correo.cobachbc.edu.mx/
 silent qmark e http://www.evernote.com/
 silent qmark f http://www.facebook.com/
