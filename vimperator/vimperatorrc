@@ -43,6 +43,7 @@ EOF
 silent qmark a http://www.amazon.com/
 silent qmark b http://www.blogger.com/
 silent qmark c http://correo.cobachbc.edu.mx/
+silent qmark e http://www.evernote.com/
 silent qmark f http://www.facebook.com/
 silent qmark g http://www.github.com/
 silent qmark i http://images.google.com/
