@@ -42,15 +42,16 @@ set newtab+=help
 " Quickmarks
 silent qmark a http://www.amazon.com/
 silent qmark b http://www.bancomer.com/
-silent qmark c http://correo.cobachbc.edu.mx/
+silent qmark c http://correo.uabc.edu.mx/
+silent qmark d http://www.dropbox.com/
 silent qmark e http://www.evernote.com/
 silent qmark f http://www.facebook.com/
-silent qmark g http://www.github.com/
+silent qmark g http://www.google.com/
 silent qmark i http://images.google.com/
 silent qmark k http://www.flickr.com/
 silent qmark l http://lmgtfy.com/
 silent qmark m http://www.cepatria.edu.mx/moodle/
-silent qmark r http://www.redhotpawn.com/
+silent qmark r http://www.g2reader.com/
 silent qmark t http://www.thepiratebay.org/
 silent qmark y http://www.youtube.com/
 silent qmark w http://www.wushdishmeen.net/
