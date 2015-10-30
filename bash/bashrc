@@ -9,6 +9,9 @@
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
 
+# ignorar en el historial los comandos que inicien con un espacio.
+export HISTCONTROL=ignorespace
+
 # append to the history file, don't overwrite it
 shopt -s histappend
 
